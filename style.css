@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap');
+
+*{
+    margin: 0;padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+nav{
+    background-color: rgb(170, 72, 255);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.game{
+    display: flex;
+    justify-content: center;
+}
+.com{
+    width: 45vw;
+    height: 90vh;
+    background-color: rgb(255, 118, 118);
+    background-image: url('img/paperl.jpg');
+    background-size: 45vw;
+    background-repeat: no-repeat;
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.me{
+    width: 45vw;
+    height: 90vh;
+    background-color: rgb(119, 142, 255);
+    background-image: url('img/paperr.jpg');
+    background-size: 45vw;
+    background-repeat: no-repeat;
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.bar{
+    background-color: #10e;
+    width: 2px;
+    height: 90vh;
+}
+.option,#reset{
+    height: 10vh;
+    width: 120px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+    background-color:greenyellow;
+    border: 1px double black;
+    border-radius: 20px;
+}
+.option:hover{
+    background-color:rgb(158, 235, 43);
+}
+.option:active{
+    background-color:rgb(69, 190, 69);
+    color: white;
+}
+
+@media screen and (max-width:1000px) {
+    nav{
+        font-size: 11px;
+    }
+    nav h1{
+        color: aqua;
+    }
+    .game{
+        flex-direction: column;
+        align-items: center;
+        /* width: 100vw; */
+    }   
+    .bar{
+        display: none;
+    } 
+    .me,.com{
+        width: 90vw;
+        height: 47vh;
+        background-size: 90vw;
+    }
+    .option,#reset{
+        height: 40px;
+    }
+}
